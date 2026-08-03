@@ -65,7 +65,7 @@ Teddy bears
 Balloons
 Greeting cards
 
-📱 Website Features
+Website Features
 Responsive Design
 Works on phones, tablets, and desktops
 Dark/Light Mode (Optional)
