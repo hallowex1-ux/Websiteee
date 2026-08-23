@@ -16,7 +16,6 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
 
 <header class="header">
 
@@ -60,8 +59,6 @@
 </header>
 
 
-<!-- ================= HERO ================= -->
-
 <section class="hero" id="home">
 
     <div class="hero-content">
@@ -101,8 +98,6 @@
 </section>
 
 
-<!-- ================= FEATURES ================= -->
-
 <section class="features">
 
     <div class="feature">
@@ -140,8 +135,6 @@
 </section>
 
 
-<!-- ================= SPECIAL OFFERS ================= -->
-
 <section class="offers">
 
     <div>
@@ -168,8 +161,6 @@
 </section>
 
 
-<!-- ================= SHOP ================= -->
-
 <section class="shop-section" id="shop">
 
     <div class="section-heading">
@@ -184,9 +175,6 @@
         </p>
 
     </div>
-
-
-    <!-- SEARCH & FILTER -->
 
     <div class="shop-controls">
 
@@ -227,14 +215,12 @@
     </div>
 
 
-    <!-- PRODUCTS -->
+
 
     <div class="products-grid" id="productsGrid"></div>
 
 </section>
 
-
-<!-- ================= OCCASIONS ================= -->
 
 <section class="occasions-section" id="occasions">
 
@@ -293,8 +279,6 @@
 
 </section>
 
-
-<!-- ================= CUSTOM BOUQUET ================= -->
 
 <section class="custom-section" id="custom">
 
@@ -442,13 +426,6 @@
 </section>
 
 
-<!-- ================= REVIEWS ================= -->
-
-
-
-
-<!-- ================= ABOUT ================= -->
-
 <section class="about-section" id="about">
 
     <div class="about-image">
@@ -482,8 +459,6 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
-
 <section class="contact-section" id="contact">
 
     <div class="section-heading">
@@ -511,7 +486,7 @@
                 <span>📞</span>
                 <div>
                     <h3>Phone</h3>
-                    <p>0912 345 6789</p>
+                    <p>0977 781 3824</p>
                 </div>
             </div>
 
@@ -519,7 +494,7 @@
                 <span>✉️</span>
                 <div>
                     <h3>Email</h3>
-                    <p>hello@bloomandco.com</p>
+                    <p>bloom&co@gmail.com</p>
                 </div>
             </div>
 
@@ -566,8 +541,6 @@
 
 </section>
 
-
-<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -629,207 +602,6 @@
 </footer>
 
 
-<!-- ================= CART SIDEBAR ================= -->
 
-<div class="overlay" id="overlay" onclick="closeCart()"></div>
 
-<div class="cart-sidebar" id="cartSidebar">
 
-    <div class="cart-header">
-
-        <h2>Your Cart</h2>
-
-        <button onclick="closeCart()">✕</button>
-
-    </div>
-
-
-    <div id="cartItems" class="cart-items">
-
-        <p class="empty-cart">
-            Your cart is empty.
-        </p>
-
-    </div>
-
-
-    <div class="cart-footer">
-
-        <div class="cart-total">
-
-            <span>Total</span>
-
-            <strong id="cartTotal">
-                ₱0
-            </strong>
-
-        </div>
-
-        <button
-            class="btn primary-btn checkout-btn"
-            onclick="openCheckout()"
-        >
-            Proceed to Checkout
-        </button>
-
-    </div>
-
-</div>
-
-
-<!-- ================= CHECKOUT MODAL ================= -->
-
-<div class="modal" id="checkoutModal">
-
-    <div class="modal-content">
-
-        <button
-            class="modal-close"
-            onclick="closeCheckout()"
-        >
-            ✕
-        </button>
-
-        <h2>Checkout</h2>
-
-        <p class="modal-subtitle">
-            Complete your information to place your order.
-        </p>
-
-
-        <form onsubmit="placeOrder(event)">
-
-            <label>Full Name</label>
-
-            <input
-                type="text"
-                id="customerName"
-                required
-            >
-
-
-            <label>Email Address</label>
-
-            <input
-                type="email"
-                id="customerEmail"
-                required
-            >
-
-
-            <label>Phone Number</label>
-
-            <input
-                type="tel"
-                id="customerPhone"
-                required
-            >
-
-
-            <label>Delivery Address</label>
-
-            <textarea
-                id="deliveryAddress"
-                required
-            ></textarea>
-
-
-            <div class="form-row">
-
-                <div>
-
-                    <label>Delivery Date</label>
-
-                    <input
-                        type="date"
-                        id="deliveryDate"
-                        required
-                    >
-
-                </div>
-
-
-                <div>
-
-                    <label>Delivery Time</label>
-
-                    <select id="deliveryTime">
-
-                        <option>9:00 AM - 12:00 PM</option>
-                        <option>12:00 PM - 3:00 PM</option>
-                        <option>3:00 PM - 6:00 PM</option>
-                        <option>6:00 PM - 8:00 PM</option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
-
-            <label>Payment Method</label>
-
-            <select id="paymentMethod">
-
-                <option>Cash on Delivery</option>
-                <option>GCash</option>
-                <option>Credit/Debit Card</option>
-
-            </select>
-
-
-            <div class="checkout-summary">
-
-                <span>Order Total</span>
-
-                <strong id="checkoutTotal">
-                    ₱0
-                </strong>
-
-            </div>
-
-
-            <button class="btn primary-btn full-btn">
-                Place Order
-            </button>
-
-        </form>
-
-    </div>
-
-</div>
-
-
-<!-- ================= WISHLIST MODAL ================= -->
-
-<div class="modal" id="wishlistModal">
-
-    <div class="modal-content wishlist-modal">
-
-        <button
-            class="modal-close"
-            onclick="closeWishlist()"
-        >
-            ✕
-        </button>
-
-        <h2>♡ My Wishlist</h2>
-
-        <div id="wishlistItems"></div>
-
-    </div>
-
-</div>
-
-
-<!-- ================= NOTIFICATION ================= -->
-
-<div id="notification" class="notification">
-    Item added to cart!
-</div>
-
-
-<script src="script.js"></script>
-
-</body>
-</html>
